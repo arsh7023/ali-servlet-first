@@ -1,0 +1,38 @@
+A - CREATE Servlet - Servlet-Sample
+    Create src directory
+    src/com/mkyong/ServletDemo1.java
+    Create classes directory
+    Create WEB-INF directory
+    Create WEB-INF/web.xml
+    javac src/com/mkyong/ServletDemo1.java -classpath "/Users/ashamakhy/Documents/apache-tomcat-8.5.50/lib/servlet-api.jar" -d classes
+    Copy into webapps tomcat
+    Create directory ali in webapps:
+    /Users/ashamakhy/Documents/apache-tomcat-8.5.50/webapps/ali/
+    Create WEB-INF directory inside ali folder:
+    /Users/ashamakhy/Documents/apache-tomcat-8.5.50/webapps/ali/WEB-INF
+    copy classes directory and web.xml into WEB-INF directory
+    /Users/ashamakhy/Documents/apache-tomcat-8.5.50/webapps/ali/WEB-INF/web.xml
+    /Users/ashamakhy/Documents/apache-tomcat-8.5.50/webapps/ali/WEB-INF/classes
+
+    https://mkyong.com/servlet/a-simple-servlet-example-write-deploy-run/
+
+B- Create executable jar - Jar-Sample
+   Create src directory
+   src/com/mkyong/awt/AwtExample.java // it has "public static void main method"
+   create classes directory
+   javac com/mkyong/awt/AwtExample.java -d classes
+   create manifest.txt file inside classes
+   manifest.txt containes: Main-Class: com.mkyong.awt.AwtExample
+   cd classes, then run :
+   jar -cvfm AwtExample.jar manifest.txt com/mkyong/awt/*.class
+   run:  java -jar AwtExample.jar    or double click
+
+   https://mkyong.com/java/how-to-make-an-executable-jar-file/
+
+
+C- JAR commands:
+    Viewing a JAR file: jar tf servlet-api.jar 
+    Create jar file : jar cf jarfilename inputfiles
+    Extract jar file: jar xf pack.jar
+    Run jar file: java -jar pack.jar
+
